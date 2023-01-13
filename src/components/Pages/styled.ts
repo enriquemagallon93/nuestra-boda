@@ -8,7 +8,7 @@ export const Title = styled(TextStyled)`
   font-weight: normal;
   text-align: center;
   z-index: 1;
-  color: #FFF;
+  color: #703b0a;
 
   @media ${device.mobileS} {
     font-size: 60px;
@@ -38,7 +38,7 @@ export const Page1Wrapper = styled.div`
 export const Page2Wrapper = styled.div`
   display: flex;
   flex: 1;
-  height: 100%;
+  height: 200%;
   align-items: center;
   
   @media ${device.mobileS} {

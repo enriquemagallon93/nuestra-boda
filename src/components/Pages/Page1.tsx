@@ -4,7 +4,7 @@ import { Title, Page1Wrapper } from "./styled";
 export const Page1: React.FC = () => {
   return (
     <Page1Wrapper>
-      <Title>Oleg & Nataly</Title>
+      <Title>Brisa y Enrique</Title>
     </Page1Wrapper>
   );
 };
