@@ -4,7 +4,7 @@ import { Parallax } from "react-parallax";
 import { Divider } from "../Divider";
 import { parseImgPath } from "./utils";
 
-const IMAGE_LAST_NAME = "image2";
+const IMAGE_LAST_NAME = "image6";
 
 export const Page: React.FC<{
   page: { img?: string; content: JSX.Element };
@@ -16,7 +16,7 @@ export const Page: React.FC<{
       className=""
       strength={200}
       bgImage={page.img}
-      bgImageStyle={{ top: "-30%" }}
+      bgImageStyle={{ top: index < 2 ? "-30%" : "-18%" }}
       onLoad={(e: Event) => {
         const img = e.target as HTMLImageElement;
 

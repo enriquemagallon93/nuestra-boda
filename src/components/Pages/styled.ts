@@ -103,17 +103,6 @@ export const Page3Wrapper = styled.div`
   height: 100%;
   justify-content: center;
   align-items: center;
-
-  @media ${device.mobileS} {
-    flex-direction: column;
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-
-  @media ${device.tablet} {
-    flex-direction: row;
-    margin: 40px;
-  }
 `;
 
 export const Page2Container = styled.div`
@@ -138,8 +127,21 @@ export const Page2Container = styled.div`
     padding-top: 50px;
     padding-bottom: 100px;
   }
+`;
 
-  /* opacity: 0.5; */
+export const Page3Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  background-color: #ffffffa8;
+
+  ${TextStyled} {
+    font-family: "Podkova", sans-serif;
+  }
+
+  width: 100%;
+  height: 100%;
 `;
 
 export const MapStyled = styled.iframe`
