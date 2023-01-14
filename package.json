@@ -4,6 +4,7 @@
   "description": "",
   "keywords": [],
   "main": "src/index.tsx",
+  "homepage": "https://enriquemagallon93.github.io",
   "dependencies": {
     "@types/styled-components": "5.1.15",
     "gh-pages": "^3.2.3",
