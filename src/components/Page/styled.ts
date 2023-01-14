@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const WrapperPage = styled("div")<{index: number}>`
+export const WrapperPage = styled("div")<{ index: number }>`
   width: 100vw;
-  height: ${({index}) => index === 1 ? 200 : 100}vh;
- 
+  padding-top: ${({ index }) => (index === 1 ? `140.1971522453%` : 0)};
+  height: ${({ index }) => (index === 1 ? 0 : 100)}vh;
+  position: "relative";
 `;
