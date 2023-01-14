@@ -24,17 +24,24 @@ const personas = !lastName
   ? `${otherNames.reverse().join(", ")} y ${lastName}`
   : lastName;
 
+const isSingular = !personas || otherNames.length === 0;
+
+console.log({ isSingular });
+
 export const Page1: React.FC = () => {
+  const message = `Brisa y Enrique ${
+    isSingular ? "te" : "les"
+  } tienen una noticia`;
   return (
     <Page1Wrapper>
       <Blur>
         {personas ? (
           <>
             <Title> Hola {personas}!</Title>
-            <Subtitle>Brisa y Enrique les tienen una noticia</Subtitle>
+            <Subtitle>{message}</Subtitle>
           </>
         ) : (
-          <Title>Brisa y Enrique les tienen una noticia</Title>
+          <Title>{message}</Title>
         )}
       </Blur>
     </Page1Wrapper>
